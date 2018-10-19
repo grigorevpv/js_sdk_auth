@@ -1,0 +1,3 @@
+[submodule "js_sdkhelper"]
+	path = js_sdkhelper
+	url = git@github.com:grigorevpv/js_sdkhelper.git

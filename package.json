@@ -4,8 +4,25 @@
   "description": "",
   "main": "auth.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register --require babel-polyfill"
   },
   "author": "Grigorev Pavel",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@tic/sdkhelper": "file:js_sdkhelper"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "babel-core": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-polyfill": "^6.0.16",
+    "babel-preset-es2015": "^6.0.15"
+  },
+  "babel": {
+    "presets": [
+      "stage-3",
+      "latest"
+    ]
+  }
 }
